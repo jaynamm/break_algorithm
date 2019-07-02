@@ -23,7 +23,7 @@ int main(){
 		sum += res[i];
 	}
 	
-	cout << (double)(sum/n) << "\n";
+	cout << sum/n << "\n";
 	
 	return 0;
 }
