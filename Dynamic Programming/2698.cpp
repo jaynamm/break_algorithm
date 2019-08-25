@@ -15,12 +15,7 @@ int main(){
 	for(int i=2; i<101; i++){
 		for(int j=0; j<i; j++){
 			dp[i][j][0] = dp[i-1][j][0] + dp[i-1][j][1];
-			if(k-1 == 0){
-				dp[i][j][1] = dp[i-1][j][0];
-			} else {
-				dp[i][j][1] = dp[i-1][j][0] + dp[i-1][j-1][1];	
-			}
-			
+			dp[i][j][1] = dp[i-1][j][0] + dp[i-1][j-1][1];
 		}
 	}
 	
