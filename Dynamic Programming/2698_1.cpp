@@ -16,13 +16,12 @@ int main(){
 		for(int j=0; j<i; j++){
 			dp[i][j][0] = dp[i-1][j][0] + dp[i-1][j][1];
 			if(j == 0) dp[i][j][1] = dp[i-1][j][0];
-            else dp[i][j][1] = dp[i-1][j][0] + dp[i-1][j-1][1];
+            		else dp[i][j][1] = dp[i-1][j][0] + dp[i-1][j-1][1];
 		}
 	}
 	
 	for(int i=0; i<T; i++){
 		cin >> n >> k;
-		
 		cout << dp[n][k][0] + dp[n][k][1] << "\n";
 	}
 	
