@@ -23,7 +23,6 @@ def solution(park, routes):
             if start[0] + n >= len(park):
                 continue
             if 'X' in [park[i][start[1]] for i in range(start[0]+1, start[0]+n+1)]:
-                print("X")
                 continue
             else:
                 start[0] += n
@@ -42,6 +41,4 @@ def solution(park, routes):
             else:
                 start[1] += n
 
-    print(start)
-    
     return start
