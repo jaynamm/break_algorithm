@@ -1,5 +1,1 @@
-n=int(input())
-
-for _ in range(n//4):
-    print("long", end=" ")
-print("int")
+print("long "*(int(input())//4)+"int")
