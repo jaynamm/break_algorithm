@@ -7,10 +7,4 @@ morse = {
 }
 
 def solution(letter):
-    answer = ''
-    let = list(map(str, letter.split()))
-    
-    for l in let:
-        answer += morse[l]
-    
-    return answer
+    return "".join([morse[l] for l in list(map(str, letter.split()))])
