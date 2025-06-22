@@ -20,8 +20,6 @@ def solution(players, m, k):
             for j in range(i, end):
                 server[j][1] += need
     
-        print(f"{i} / 플레이어 : {players[i]} /  필요한 서버 수 : {server[i][0]} / 현재 서버 수 : {server[i][1]} / 증설한 서버 수 :  {server[i][2]}")
-    
     answer = sum([s[2] for s in server])
     
     return answer
